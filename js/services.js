@@ -1,6 +1,6 @@
 angular.module('todoList.services', [])
   .factory('API', function($rootScope, $http, $ionicLoading, $window) {
-    var base = 'https://floating-brook-3532.herokuapp.com';
+    var base = 'http://localhost:9804';
 
     $rootScope.show = function(text) {
       $rootScope.loading = $ionicLoading.show({
