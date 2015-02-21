@@ -11,9 +11,9 @@ angular.module('todoList.controllers', [ 'todoList.services' ])
 
     $scope.validateUser = function() {
       var email = this.user.email;
-      var password = this.user.passwod;
+      var password = this.user.password;
 
-      if(!email || !passwod) {
+      if(!email || !password) {
         $rootScope.notify('Please enter valid credentials');
         return false;
       }
